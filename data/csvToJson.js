@@ -31,7 +31,12 @@ function generate_data(new_data) {
   const final_data = [];
   for (const key in new_data) {
     // console.log(`${key}: ${new_data[key]}`)
-    const value = new_data[key];
+    var value;
+    if (new_data[key] > 0) {
+      value = Math.log10(new_data[key]);
+    } else {
+      value = 0;
+    }
     const keys = key.split("@");
     const tokens = keys[1].split("/");
     var date;

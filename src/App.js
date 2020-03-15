@@ -36,15 +36,28 @@ class App extends React.Component {
         <div className="about">
           <ul>
             <li className="sources">
-              Animation Source: observablehq.com/@d3/bar-chart-race
+              Animation Source:
+              <a
+                href="https://observablehq.com/@d3/bar-chart-race"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                observablehq.com/@d3/bar-chart-race
+              </a>
             </li>
             <li className="sources">
-              Data
-              Source:github.com/CSSEGISandData/COVID-19/csse_covid_19_data/csse_covid_19_time_series
+              Data Source:
+              <a
+                href="https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github.com/CSSEGISandData/COVID-19/csse_covid_19_data/csse_covid_19_time_series
+              </a>
             </li>
             <li className="sources">
               Number on the bar represents log of actual number of confirmed
-              cases: 3 = 10^3 due to explosive growth
+              cases: 3 = 10^3 in order to flatten exponential growth
             </li>
           </ul>
         </div>

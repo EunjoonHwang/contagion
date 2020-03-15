@@ -38,7 +38,15 @@ def generate_data(data_dict):
         keys = k.split("@")
         # print(keys[0], keys[1], v)
         tokens = keys[1].split("/")
-        date = "20" + tokens[2] + "-0" + tokens[0] + "-" + tokens[1] + "T00:00:00.000Z"
+        if len(tokens[0]) == 1 and len(tokens[1]) == 1:
+            date = "20" + tokens[2] + "-0" + tokens[0] + "-0" + tokens[1] + "T00:00:00.000Z"
+        elif len(tokens[0]) == 1 and len(tokens[1]) > 1:
+            date = "20" + tokens[2] + "-0" + tokens[0] + "-" + tokens[1] + "T00:00:00.000Z"
+        elif len(tokens[0]) > 1 and len(tokens[1]) == 1:
+            date = "20" + tokens[2] + "-" + tokens[0] + "-0" + tokens[1] + "T00:00:00.000Z"
+        else:
+            date = "20" + tokens[2] + "-" + tokens[0] + "-" + tokens[1] + "T00:00:00.000Z"
+            
         if v > 0:
             item = {"name" : keys[0], "date" : date, "value" : math.log(v, 10), "category" : "test"}
         else:

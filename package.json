@@ -11,6 +11,7 @@
     "d3-array": "^2.4.0",
     "d3-selection": "^1.4.1",
     "heroku": "^7.39.0",
+    "jquery-csv": "^1.0.8",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0"

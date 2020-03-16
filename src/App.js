@@ -5,7 +5,7 @@ import { select } from "d3-selection";
 
 class App extends React.Component {
   state = {
-    speed: 100
+    speed: 500
   };
 
   componentDidMount() {
@@ -24,7 +24,10 @@ class App extends React.Component {
 
   //revisit this pause function
   pausePage = () => {
-    window.stop();
+    //window.location.reload(false);
+    //this.createAnimation.pause();
+    const svgDoc = document.getElementsByTagName("svg");
+    svgDoc[0].pauseAnimations();
   };
 
   render() {

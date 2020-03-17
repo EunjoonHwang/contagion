@@ -24,10 +24,10 @@ class App extends React.Component {
 
   //revisit this pause function
   pausePage = () => {
-    //window.location.reload(false);
+    window.location.reload(false);
     //this.createAnimation.pause();
-    const svgDoc = document.getElementsByTagName("svg");
-    svgDoc[0].pauseAnimations();
+    // const svgDoc = document.getElementsByTagName("svg");
+    // svgDoc[0].pauseAnimations();
   };
 
   render() {
@@ -38,7 +38,7 @@ class App extends React.Component {
         </h2>
         <div className="about">
           <ul>
-            <li className="sources">
+            {/* <li className="sources">
               Animation Source:
               <a
                 href="https://observablehq.com/@d3/bar-chart-race"
@@ -47,7 +47,7 @@ class App extends React.Component {
               >
                 observablehq.com/@d3/bar-chart-race
               </a>
-            </li>
+            </li> */}
             <li className="sources">
               Data Source:
               <a

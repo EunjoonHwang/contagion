@@ -34,7 +34,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <h2>
-          Number of Corona Virus Confirmed Cases by Country Using Bar Chart Race
+          Number of Corona Virus Confirmed Cases by date
+          <br /> Let's think how to decrease the exponential growth
         </h2>
         <div className="about">
           <ul>

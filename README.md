@@ -1,4 +1,4 @@
-## contagion: https://covidconfirmedcasesbycountry.herokuapp.com/
+## contagion: https://racingbar.herokuapp.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 & Bar Chart Race (https://observablehq.com/@d3/bar-chart-race)

@@ -8,9 +8,9 @@ The data for the race is a CSV with columns date (in MM-DD-YY format), name of c
 
 To run the app, go to the project directory
 
-### `npm install`
+# `npm install`
 
-### `npm start`
+# `npm start`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The animation will reload if you press 'Replay' Button

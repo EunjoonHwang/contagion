@@ -1,4 +1,4 @@
-## contagion: https://covidconfirmedcasesbycountry.herokuapp.com/
+## contagion: https://racingbar.herokuapp.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 & Bar Chart Race (https://observablehq.com/@d3/bar-chart-race)
@@ -11,8 +11,8 @@ To run the app, go to the project directory
 
 ### `npm start`
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The animation will reload if you press 'Replay' Button
+Open [http://localhost:3000] to view it in the browser.
+The animation will reload when you press 'Replay' Button
 
 To replace data, go to data directory
 `node csvToJson.js`

@@ -5,7 +5,7 @@ import { select } from "d3-selection";
 
 class App extends React.Component {
   state = {
-    speed: 500
+    speed: 250,
   };
 
   componentDidMount() {
@@ -25,9 +25,6 @@ class App extends React.Component {
   //revisit this pause function
   pausePage = () => {
     window.location.reload(false);
-    //this.createAnimation.pause();
-    // const svgDoc = document.getElementsByTagName("svg");
-    // svgDoc[0].pauseAnimations();
   };
 
   render() {
@@ -35,20 +32,10 @@ class App extends React.Component {
       <div className="App">
         <h2>
           Number of Corona Virus Confirmed Cases by Date
-          <br/> Let's think how to decrease the exponential growth
+          <br /> Let's think how to decrease the exponential growth
         </h2>
         <div className="about">
           <ul>
-            {/* <li className="sources">
-              Animation Source:
-              <a
-                href="https://observablehq.com/@d3/bar-chart-race"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                observablehq.com/@d3/bar-chart-race
-              </a>
-            </li> */}
             <li className="sources">
               Data Source:
               <a
@@ -94,7 +81,11 @@ class App extends React.Component {
           </button>
         </div>
         <div className="App">
-          <svg ref={node => (this.node = node)} width={1000} height={598}></svg>
+          <svg
+            ref={(node) => (this.node = node)}
+            width={1000}
+            height={598}
+          ></svg>
         </div>
       </div>
     );

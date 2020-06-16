@@ -1,4 +1,4 @@
-## contagion: ​https://bit.ly/2AxDACM 							
+## contagion: ​https://bit.ly/2AxDACM (Deployed to AWS)					
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
@@ -13,6 +13,3 @@ To run the app, go to the project directory
 
 `npm start`
 
-To replace data, go to data directory
-`node csvToJson.js`
----> this will create a data file to src/covid_data.json from corona_confirmed.csv

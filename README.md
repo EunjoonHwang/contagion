@@ -13,6 +13,4 @@ To run the app, go to the project directory
 
 `npm start`
 
-To replace data, go to data directory
-`node csvToJson.js`
----> this will create a data file to src/covid_data.json from corona_confirmed.csv
+--Simple Check-In-
